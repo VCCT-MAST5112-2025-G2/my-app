@@ -44,6 +44,12 @@ const MenuPage: React.FC = () => {
 
   const items = menu[selectedCategory];
 
+  // Calculate average price
+  const averagePrice =
+    items.length > 0
+      ? (items.reduce((sum, dish) => sum + dish.price, 0) / items.length).toFixed(2)
+      : '0.00';
+
   const handleAddDish = (): void => {
     if (!newName.trim() || !newDesc.trim() || !newPrice) return;
     const newDish: Dish = {
@@ -67,8 +73,12 @@ const MenuPage: React.FC = () => {
         Menu – {selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)}
       </Animated.Text>
 
+      <Animated.Text entering={FadeInDown.delay(150)} style={styles.subtitle}>
+        Average Price: R {averagePrice}
+      </Animated.Text>
+
       <View style={styles.categoryButtons}>
-        {(['starters', 'mains', 'desserts'] as const).map(cat => (
+        {(['starters', 'mains', 'desserts'].map(cat => (
           <TouchableOpacity
             key={cat}
             style={[
@@ -86,7 +96,7 @@ const MenuPage: React.FC = () => {
               {cat.charAt(0).toUpperCase() + cat.slice(1)}
             </Text>
           </TouchableOpacity>
-        ))}
+        )))}
       </View>
 
       <View style={styles.form}>
@@ -127,7 +137,7 @@ const MenuPage: React.FC = () => {
         )}
       />
 
-      <TouchableOpacity onPress={() => navigation.navigate('Welcome' as never)} style={styles.backButton}>
+      <TouchableOpacity onPress={() => navigation.navigate('FilterMenu')} style={styles.backButton}>
         <Text style={styles.backButtonText}>Back to Welcome</Text>
       </TouchableOpacity>
     </ScrollView>
@@ -142,8 +152,14 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 26,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 10,
     textAlign: 'center',
+  },
+  subtitle: {
+    fontSize: 18,
+    textAlign: 'center',
+    marginBottom: 15,
+    color: '#333',
   },
   categoryButtons: {
     flexDirection: 'row',
@@ -218,5 +234,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MenuPage;
 
