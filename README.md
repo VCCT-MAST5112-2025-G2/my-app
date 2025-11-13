@@ -3,6 +3,8 @@
 # Formative 2
 # Youtube link
 https://youtu.be/_1dZsQCAMhM
+# GitHub link
+https://github.com/VCCT-MAST5112-2025-G2/my-app/tree/master
 
 # Purpose
 The purpose of the menu app is so that the chef can showcase all of the types of disshes ranging from starters, mains as well as the dessert.
