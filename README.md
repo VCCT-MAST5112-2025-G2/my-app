@@ -30,10 +30,15 @@ Cancel button: this will cancel the dish that was added
 back button: this button allows the chef to go back incase they would like to see or change something.
 
 # Filter page 
-This page will basically allow you to choose between starter, mains or deserts without having to view the whole menu
+On Filter page the chef can select just one course (Starters, Mains or Desserts), and as soon as they do, only the items from that course are displayed. This means they don’t have to scroll through the full menu with all courses — they can directly jump to the section they are interested in.
 
 # MenuApp
-This is where you will be able to add or remove dishes according to your choice
+The MenuApps is where you will be able to add or remove dishes according to your choice.
+On this page you are in full control of the menu:
+
+You can add new dishes (enter name, description, course and price).
+You can remove dishes from the menu list that you no longer want included.
+This empowers the chef to instantly update the menu. e menu list.
 
 # Actions on screens
 1) The app will run immediately showing the start odering button
