@@ -28,11 +28,19 @@ Catogory buttons: this allows the chef to know which catogory the meal they are 
 save button: this allows you to  save the meals added
 Cancel button: this will cancel the dish that was added
 back button: this button allows the chef to go back incase they would like to see or change something.
+
+# Filter page 
+This page will basically allow you to choose between starter, mains or deserts without having to view the whole menu
+
+# MenuApp
+This is where you will be able to add or remove dishes according to your choice
+
 # Actions on screens
 1) The app will run immediately showing the start odering button
 2) The start ordering button will take you to the next page which is the Homepage
 3) on top you will see the different catogories and where you will be able to add a new dish, and under that will you see the dishes as well as their descriptions and prices of the meals that already exist on the menu.
 4) After adding the dish you will be able to save it
+   
 # Documentation
 <img width="424" height="374" alt="Screenshot 1" src="https://github.com/user-attachments/assets/d0efbb4f-5ff8-48fc-b956-4a3d0ca1d17f" />
 <img width="422" height="382" alt="Screenshot 2" src="https://github.com/user-attachments/assets/4bd40f59-2afc-4b2b-b606-03179b150cd2" />
@@ -44,7 +52,7 @@ back button: this button allows the chef to go back incase they would like to se
 2) The lecturer slides on arc(super handy lecturer slides)
 3) ChatGpt (to help me figure out errors in my code and how to fix them)
 
-# final Poe
+# Final Poe
 i was able to add two more pages onto my code which were the filter page an the menu page.
 i placed my menu on a completely different page where the chef will also be able to add their own dish and delete a dish as well to update the menu.
 
