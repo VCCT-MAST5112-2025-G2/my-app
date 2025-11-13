@@ -42,6 +42,11 @@ back button: this button allows the chef to go back incase they would like to se
 2) The lecturer slides on arc(super handy lecturer slides)
 3) ChatGpt (to help me figure out errors in my code and how to fix them)
 
+# final Poe
+i was able to add two more pages onto my code which were the filter page an the menu page.
+i placed my menu on a completely different page where the chef will also be able to add their own dish and delete a dish as well to update the menu.
+
+
 
    
 
